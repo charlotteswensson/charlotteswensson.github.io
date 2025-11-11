@@ -1,0 +1,19 @@
+{
+  "name": "charlotteswensson.github.io",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/charlotteswensson/charlotteswensson.github.io",
+  "author": "Martijn Versluis <martijnversluis@users.noreply.github.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.17"
+  },
+  "scripts": {
+    "build:css": "tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
+    "build:jekyll": "bundle exec jekyll build",
+    "build": "yarn build:jekyll && yarn build:css"
+  },
+  "packageManager": "yarn@4.2.2+sha512.c44e283c54e02de9d1da8687025b030078c1b9648d2895a65aab8e64225bfb7becba87e1809fc0b4b6778bbd47a1e2ab6ac647de4c5e383a53a7c17db6c3ff4b"
+}
