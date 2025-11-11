@@ -19,16 +19,23 @@ jobs:
         with:
           ruby-version: '.ruby-version'
           bundler-cache: true
+      - name: Install gems
+        run: bundle install
       - name: Setup NodeJS
         uses: actions/setup-node@v6
         with:
           node-version-file: '.node-version'
           cache: 'yarn'
           cache-dependency-path: 'yarn.lock'
-      - run: |
-          bundle install
-          yarn install
-          yarn build
+      - name: Install node modules
+        run: yarn install
+      - name: Build static site
+        run: yarn build
+      - name: Upload static files as artifact
+        id: deployment
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
 
   deploy:
     runs-on: ubuntu-latest
