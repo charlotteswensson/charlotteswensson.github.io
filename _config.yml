@@ -1,13 +1,15 @@
 exclude:
-  - node_modules
-  - package.json
-  - yarn.lock
-  - package-lock.json
-  - tailwind.config.js
-  - postcss.config.js
+  - .github
+  - .gitignore
+  - .idea
+  - assets/css/main.css
   - Gemfile
   - Gemfile.lock
+  - Procfile
   - README.md
-  - .gitignore
-  - .github
-  - .idea
+  - node_modules
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+  - yarn.lock

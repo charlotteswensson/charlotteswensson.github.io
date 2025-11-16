@@ -12,9 +12,12 @@
     "tailwindcss": "^4.1.17"
   },
   "scripts": {
-    "build:css": "yarn tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
-    "build:jekyll": "bundle exec jekyll build",
-    "build": "yarn build:jekyll && yarn build:css"
+    "build": "yarn build:jekyll:build && yarn tailwind:build",
+    "jekyll:build": "bundle exec jekyll build",
+    "jekyll:serve": "bundle exec jekyll serve --livereload",
+    "tailwind:build": "yarn tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
+    "tailwind:watch": "yarn tailwind:build --watch"
+
   },
   "packageManager": "yarn@4.2.2+sha512.c44e283c54e02de9d1da8687025b030078c1b9648d2895a65aab8e64225bfb7becba87e1809fc0b4b6778bbd47a1e2ab6ac647de4c5e383a53a7c17db6c3ff4b"
 }

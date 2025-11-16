@@ -1,4 +1,27 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
+@font-face {
+  font-family: "3rd Man";
+  src:
+    url("/assets/fonts/3rd_man/3rd_man.otf") format("opentype"),
+    url("/assets/fonts/3rd_man/3rd_man.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@theme {
+  --color-primary: #c18748;
+  --color-primary-bg: #f3d6b2;
+  --color-secondary: #412e1f;
+  --color-positive-bg: #a3c187;
+  --color-negative-bg: #d88a8a;
+  --color-white: #fff;
+
+  --font-serif: "Times New Roman";
+  --font-theme: "3rd Man", serif;
+
+  --navigation-height: 72px;
+  --navigation-top-margin: 72px;
+  --navigation-total-height: calc(var(--navigation-height) + var(--navigation-top-margin));
+  --mobile-navigation-height: calc(2 * var(--navigation-height));
+}
