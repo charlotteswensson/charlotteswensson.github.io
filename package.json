@@ -12,7 +12,7 @@
     "tailwindcss": "^4.1.17"
   },
   "scripts": {
-    "build": "yarn build:jekyll:build && yarn tailwind:build",
+    "build": "yarn tailwind:build && yarn jekyll:build",
     "jekyll:build": "bundle exec jekyll build",
     "jekyll:serve": "bundle exec jekyll serve --livereload",
     "tailwind:build": "yarn tailwindcss -i ./assets/css/main.css -o ./assets/css/tailwind.css --minify",
