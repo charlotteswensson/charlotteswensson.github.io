@@ -9,8 +9,8 @@
 <div class="relative">
   <section class="absolute bottom-0 top-0 left-0 right-0 section h-screen pointer-events-none" id="home"></section>
 
-  <header class="h-[70vh] flex items-end px-4">
-    <div class="flex flex-col sm:flex-row mb-8 items-center container mx-auto">
+  <header class="h-[60vh] flex items-end px-4">
+    <div class="flex flex-col sm:flex-row items-center container mx-auto">
       <div class="sm:w-2/5">
         <img
           class="object-contain shadow-[5px_5px_10px_0_rgba(60,60,60,0.8)]"
@@ -28,7 +28,7 @@
   <div class="sticky top-0 bg-primary z-100">
     <div class=" bg-white h-[var(--navigation-top-margin)]">
       <div
-        class=" px-4 sm:px-16 lg:px-0 opacity-0 transition-[opacity] container mx-auto flex text-[50%] content-center flex-wrap flex-row justify-end items-center h-full gap-8 [&.active]:opacity-100"
+        class="px-4 sm:px-16 lg:px-4 opacity-0 transition-[opacity] container mx-auto flex text-[50%] content-center flex-wrap flex-row justify-end items-center h-full gap-8 [&.active]:opacity-100"
         id="sticky-bio"
       >
         <h1 class="text-[3.125em]"><a href="#home">Charlotte Swensson</a></h1>
@@ -74,23 +74,23 @@
     </nav>
   </div>
 
-  <div class="h-[calc(30vh-var(--navigation-height))]"></div>
+  <div class="h-[calc(40vh-var(--mobile-navigation-height))] sm:h-[calc(40vh-var(--navigation-height))]"></div>
 
   <section
     class="section flex col h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0"
     id="biografie"
   >
-    <div class="flex flex-col sm:flex-row gap-16 sm:gap-16 lg:gap-32 items-center sm:py-32 max-h-full">
+    <div class="flex flex-col sm:flex-row gap-16 sm:gap-16 lg:gap-32 items-center max-h-full">
       <div class="sm:w-4/10 flex items-center justify-center max-w-[60vw] h-full object-contain">
         <img
           src="assets/images/bio.jpg"
           alt="Charlotte Swensson - biografie"
-          class="max-h-full -scale-x-100 -rotate-8 shadow-[10px_0_20px_0_rgba(60,60,60,0.8)]"
+          class="max-h-[55vh] -scale-x-100 -rotate-8 shadow-[10px_0_20px_0_rgba(60,60,60,0.8)]"
         >
       </div>
 
       <div class="sm:w-6/10">
-        <p class="text-[27px] sm:text-[32px] lg:text-[37px]">
+        <p class="text-[22px] sm:text-[27px] lg:text-[32px]">
           Charlotte debuteert met Het Kruispunt, een indringend psychologisch verhaal over liefde, schuld en
           controle. Ze werkt in het onderwijs en schrijft met dezelfde scherpte als waarmee ze observeert:
           eerlijk, gelaagd en zonder oordeel.
@@ -165,16 +165,16 @@
   </section>
 
   <section
-    class="section flex flex-row h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0"
+    class="section flex flex-row h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0 items-center"
     id="boeken"
   >
-    <div class="flex flex-col md:flex-row gap-8 lg:gap-16 items-start sm:py-32 w-full h-full max-h-full">
+    <div class="flex flex-col md:flex-row gap-8 lg:gap-16 items-start w-full max-h-full">
 <!--      <div class="lg:w-6/10 flex items-center h-full gap-8">-->
-        <div class="w-1/2 mx-auto sm:mx-0 sm:w-3/10 flex justify-center items-start h-full object-contain">
+        <div class="w-1/2 mx-auto sm:mx-0 sm:w-3/10 flex justify-center items-start object-contain">
           <img
             src="assets/images/boek.jpg"
             alt="Charlotte Swensson - contact"
-            class="max-h-full shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+            class="max-h-[55vh] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
           >
         </div>
 
@@ -189,7 +189,7 @@
 
           <p class="mb-6">Wat begint als zorg en bezorgdheid, verandert langzaam in macht, schuld en gevaar.</p>
 
-          <p class="mb-6">Drie vrouwen, één gezin — en een grens die niemand op tijd ziet aankomen.</p>
+          <p>Drie vrouwen, één gezin — en een grens die niemand op tijd ziet aankomen.</p>
         </div>
 <!--      </div>-->
 
@@ -215,15 +215,15 @@
   </section>
 
   <section
-    class="section flex-col h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0"
+    class="section flex flex-row h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0 items-center justify-center"
     id="shop"
   >
-    <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-32 items-center sm:py-32 max-h-full">
-      <div class="sm:w-1/2 flex flex-col items-center justify-center max-w-[60vw] lg:max-w-full h-full object-contain">
+    <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-32 items-center justify-center max-h-full">
+      <div class="sm:w-1/2 flex flex-col shrink items-center max-w-[60vw] lg:max-w-full object-contain">
         <img
           src="assets/images/boek.jpg"
           alt="Charlotte Swensson - Het Kruispunt - softcover"
-          class="max-h-full lg:max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+          class="max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
         >
         <div class="text-center text-[36px] sm:text-[41px] md:text-[46px]">Het Kruispunt</div>
         <div class="text-center text-[30px]">Softcover<br>&euro; 17,99</div>
@@ -233,7 +233,7 @@
         <img
           src="assets/images/ebook.png"
           alt="Charlotte Swensson - Het Kruispunt - e-book"
-          class="max-h-full lg:max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+          class="max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
         >
         <div class="text-center text-[36px] sm:text-[41px] md:text-[46px]">Het Kruispunt</div>
         <div class="text-center text-[30px]">E-book<br>&euro; 4,99</div>
