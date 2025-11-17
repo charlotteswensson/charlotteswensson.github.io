@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>Het kruispunt</title>
   <link rel="stylesheet" href="assets/css/tailwind.css">
+  <meta name="viewport" content="width=device-width">
 </head>
 <body class="font-serif">
 <div class="relative">
@@ -77,19 +78,19 @@
   <div class="h-[calc(40vh-var(--mobile-navigation-height))] sm:h-[calc(40vh-var(--navigation-height))]"></div>
 
   <section
-    class="section flex col h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0"
+    class="section flex col h-screen pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-[2vw]"
     id="biografie"
   >
-    <div class="flex flex-col sm:flex-row gap-16 sm:gap-16 lg:gap-32 items-center max-h-full">
-      <div class="sm:w-4/10 flex items-center justify-center max-w-[60vw] h-full object-contain">
+    <div class="flex flex-col sm:flex-row gap-16 sm:gap-16 lg:gap-32 items-center justify-center max-h-full">
+      <div class="sm:w-2/10 flex items-center justify-center object-contain">
         <img
           src="assets/images/bio.jpg"
           alt="Charlotte Swensson - biografie"
-          class="max-h-[55vh] -scale-x-100 -rotate-8 shadow-[10px_0_20px_0_rgba(60,60,60,0.8)]"
+          class="max-h-[min(50vh,55vw)] -scale-x-100 -rotate-8 shadow-[10px_0_20px_0_rgba(60,60,60,0.8)]"
         >
       </div>
 
-      <div class="sm:w-6/10">
+      <div class="sm:w-8/10">
         <p class="text-[22px] sm:text-[27px] lg:text-[32px]">
           Charlotte debuteert met Het Kruispunt, een indringend psychologisch verhaal over liefde, schuld en
           controle. Ze werkt in het onderwijs en schrijft met dezelfde scherpte als waarmee ze observeert:
@@ -100,15 +101,15 @@
   </section>
 
   <section
-    class="section flex-col h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0"
+    class="section flex flex-col h-screen pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-[2vw] sm:px-16 lg:px-0"
     id="contact"
   >
-    <div class="flex flex-col sm:flex-row gap-16 sm:gap-16 lg:gap-32 items-center sm:py-32 max-h-full">
+    <div class="flex flex-col sm:flex-row gap-8 items-center justify-center sm:py-32 h-full">
       <div class="sm:w-4/10 flex items-center justify-center max-w-[60vw] lg:max-w-full h-full object-contain">
         <img
           src="assets/images/contact.jpg"
           alt="Charlotte Swensson - contact"
-          class="max-h-full lg:max-h-[60vh] -rotate-10 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+          class="max-h-[min(50vh,55vw)] -rotate-10 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
         >
       </div>
 
@@ -165,29 +166,29 @@
   </section>
 
   <section
-    class="section flex flex-row h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0 items-center"
+    class="section flex flex-row h-screen grow pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-[2vw] items-center"
     id="boeken"
   >
-    <div class="flex flex-col md:flex-row gap-8 lg:gap-16 items-start w-full max-h-full">
+    <div class="flex flex-col md:flex-row gap-2 sm:gap-8 lg:gap-16 items-start w-full">
 <!--      <div class="lg:w-6/10 flex items-center h-full gap-8">-->
-        <div class="w-1/2 mx-auto sm:mx-0 sm:w-3/10 flex justify-center items-start object-contain">
+        <div class="w-1/2 sm:w-2/10 mx-auto sm:mx-0 flex justify-center items-start object-contain shrink">
           <img
             src="assets/images/boek.jpg"
             alt="Charlotte Swensson - contact"
-            class="max-h-[55vh] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+            class="max-h-[min(40vh,55vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
           >
         </div>
 
-        <div class="sm:w-7/10 text-[17px] sm:text[22px] lg:text-[27px]">
-          <h2 class="font-theme text-[55px] mb-6">Het Kruispunt</h2>
+        <div class="sm:w-8/10 text-[17px] sm:text[22px] lg:text-[27px] px-2 grow">
+          <h2 class="font-theme text-[37px] md:text-[47px] lg:text-[55px]">Het Kruispunt</h2>
 
-          <p class="mb-6">Wat gebeurt er als liefde doorslaat in controle?</p>
+          <p class="mb-2 sm:mb-[min(24px,3vh)]">Wat gebeurt er als liefde doorslaat in controle?</p>
 
-          <p class="mb-6">Na een zwaar verlies proberen Sara en David hun leven opnieuw op te bouwen. Met de geboorte van hun
+          <p class="mb-2 sm:mb-[min(24px,3vh)]">Na een zwaar verlies proberen Sara en David hun leven opnieuw op te bouwen. Met de geboorte van hun
             dochter Zaya lijkt de rust eindelijk terug. Maar tussen Sara, haar schoonmoeder Marian en haar vriendin
             Noor sluipt iets naar binnen.</p>
 
-          <p class="mb-6">Wat begint als zorg en bezorgdheid, verandert langzaam in macht, schuld en gevaar.</p>
+          <p class="mb-2 sm:mb-[min(24px,3vh)]">Wat begint als zorg en bezorgdheid, verandert langzaam in macht, schuld en gevaar.</p>
 
           <p>Drie vrouwen, één gezin — en een grens die niemand op tijd ziet aankomen.</p>
         </div>
@@ -215,28 +216,36 @@
   </section>
 
   <section
-    class="section flex flex-row h-screen pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0 items-center justify-center"
+    class="section flex flex-row h-screen grow pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-4 sm:px-16 lg:px-0 items-center justify-center"
     id="shop"
   >
-    <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-32 items-center justify-center max-h-full">
-      <div class="sm:w-1/2 flex flex-col shrink items-center max-w-[60vw] lg:max-w-full object-contain">
-        <img
-          src="assets/images/boek.jpg"
-          alt="Charlotte Swensson - Het Kruispunt - softcover"
-          class="max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
-        >
-        <div class="text-center text-[36px] sm:text-[41px] md:text-[46px]">Het Kruispunt</div>
-        <div class="text-center text-[30px]">Softcover<br>&euro; 17,99</div>
+    <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-32 items-center justify-center h-full w-full">
+      <div class="gap-4 sm:gap-0 sm:w-1/2 flex flex-row sm:flex-col shrink items-center">
+        <div class="object-contain">
+          <img
+            src="assets/images/boek.jpg"
+            alt="Charlotte Swensson - Het Kruispunt - softcover"
+            class="max-h-[min(45vh,45vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+          >
+        </div>
+        <div>
+          <div class="text-center text-[27px] sm:text-[32px] md:text-[min(6vh,37px)]">Het Kruispunt</div>
+          <div class="text-center text-[22px] sm:text-[27px] md:text-[min(5vh,32px)]">Softcover &euro; 17,99</div>
+        </div>
       </div>
 
-      <div class="sm:w-1/2 flex flex-col items-center justify-center max-w-[60vw] lg:max-w-full h-full object-contain">
-        <img
-          src="assets/images/ebook.png"
-          alt="Charlotte Swensson - Het Kruispunt - e-book"
-          class="max-h-[45vh] mb-2 md:mb-8 shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
-        >
-        <div class="text-center text-[36px] sm:text-[41px] md:text-[46px]">Het Kruispunt</div>
-        <div class="text-center text-[30px]">E-book<br>&euro; 4,99</div>
+      <div class="gap-8 sm:gap-0 sm:w-1/2 flex flex-row sm:flex-col shrink items-center">
+        <div class="object-contain">
+          <img
+            src="assets/images/ebook.png"
+            alt="Charlotte Swensson - Het Kruispunt - e-book"
+            class="max-h-[min(45vh,45vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+          >
+        </div>
+        <div>
+          <div class="text-center text-[27px] sm:text-[32px] md:text-[min(6vh,37px)]">Het Kruispunt</div>
+          <div class="text-center text-[22px] sm:text-[27px] md:text-[min(5vh,32px)]">E-book &euro; 4,99</div>
+        </div>
       </div>
     </div>
   </section>

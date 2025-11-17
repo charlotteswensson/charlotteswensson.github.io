@@ -24,4 +24,5 @@
   --navigation-top-margin: 72px;
   --navigation-total-height: calc(var(--navigation-height) + var(--navigation-top-margin));
   --mobile-navigation-height: calc(2 * var(--navigation-height));
+  --mobile-navigation-total-height: calc(var(--mobile-navigation-height) + var(--navigation-top-margin));
 }
