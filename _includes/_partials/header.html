@@ -1,0 +1,45 @@
+<header class="h-[60vh] flex items-end px-4">
+  <div class="flex flex-col sm:flex-row items-center container mx-auto">
+    <div class="sm:w-2/5">
+      <img
+        class="object-contain shadow-[5px_5px_10px_0_rgba(60,60,60,0.8)]"
+        src="assets/images/home.png"
+        alt="{{ site.data.copy.title }} - home"
+      >
+    </div>
+    <div class="text-center sm:w-3/5 text-[70%] sm:text-[100%]">
+      <h1 class="text-[3.125em]">{{ site.data.copy.title }}</h1>
+      <div class="text-[1.6875em] text-primary">{{ site.data.copy.subtitle }}</div>
+    </div>
+  </div>
+</header>
+
+<div class="sticky top-0 bg-primary z-100">
+  <div class=" bg-white h-[var(--navigation-top-margin)]">
+    <div
+      class="px-4 sm:px-16 lg:px-4 opacity-0 transition-[opacity] container mx-auto flex text-[50%] content-center flex-wrap flex-row justify-end items-center h-full gap-8 [&.active]:opacity-100"
+      id="sticky-bio"
+    >
+      <h1 class="text-[3.125em]"><a href="#home">{{ site.data.copy.title }}</a></h1>
+      <div class="text-[1.6875em] text-primary">{{ site.data.copy.subtitle }}</div>
+    </div>
+  </div>
+
+  <nav class="container mx-auto h-[var(--mobile-navigation-height)] sm:h-[var(--navigation-height)] ">
+    <ul class="sr-only">
+      <li>
+        <a href="#home">Home</a>
+      </li>
+    </ul>
+    <ul class="flex flex-row flex-wrap p-0 place-content-around text-[27px] h-full">
+      {% for page_name in site.data.pages %}
+      <li class="w-1/2 sm:w-auto">
+        <a
+          class="flex justify-center items-center h-full no-underline text-white [&.active]:text-secondary [&.active]:font-theme [&.active]:text-[48px]"
+          href="#{{ page_name }}"
+        >{{ page_name | capitalize }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</div>
