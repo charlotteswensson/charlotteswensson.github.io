@@ -1,0 +1,10 @@
+- name: Het Kruispunt
+  description: Softcover
+  price: € 17,99
+  image: boek.jpg
+  shopify_slug: softcover-het-kruispunt
+- name: Het Kruispunt
+  description: E-book
+  price: € 4,99
+  image: ebook.png
+  shopify_slug: e-book-het-kruispunt

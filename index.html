@@ -1,3 +1,6 @@
+---
+---
+
 <!DOCTYPE html>
 <html class="scroll-smooth">
 <head>
@@ -220,34 +223,25 @@
     id="shop"
   >
     <div class="flex flex-col sm:flex-row gap-8 sm:gap-16 lg:gap-32 items-center justify-center h-full w-full">
-      <div class="gap-4 sm:gap-0 sm:w-1/2 flex flex-row sm:flex-col shrink items-center">
-        <div class="object-contain">
-          <img
-            src="assets/images/boek.jpg"
-            alt="Charlotte Swensson - Het Kruispunt - softcover"
-            class="max-h-[min(45vh,45vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
-          >
+      {% for product in site.data.products %}
+        <div class="gap-4 sm:gap-0 sm:w-1/2 flex flex-row sm:flex-col shrink items-center">
+          <div class="object-contain">
+            <a href="https://shop.charlotteswensson.nl/products/{{ product.shopify_slug }}" target="_blank">
+              <img
+                src="assets/images/{{ product.image }}"
+                alt="Charlotte Swensson - {{ product.name }} - {{ product.description }}"
+                class="max-h-[min(45vh,45vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
+              >
+            </a>
+          </div>
+          <div>
+            <a href="https://shop.charlotteswensson.nl/products/{{ product.shopify_slug }}" target="_blank">
+              <div class="text-center text-[27px] sm:text-[32px] md:text-[min(6vh,37px)]">{{ product.name }}</div>
+              <div class="text-center text-[22px] sm:text-[27px] md:text-[min(5vh,32px)]">{{ product.description }} {{ product.price }}</div>
+            </a>
+          </div>
         </div>
-        <div>
-          <div class="text-center text-[27px] sm:text-[32px] md:text-[min(6vh,37px)]">Het Kruispunt</div>
-          <div class="text-center text-[22px] sm:text-[27px] md:text-[min(5vh,32px)]">Softcover &euro; 17,99</div>
-        </div>
-      </div>
-
-      <div class="gap-8 sm:gap-0 sm:w-1/2 flex flex-row sm:flex-col shrink items-center">
-        <div class="object-contain">
-          <img
-            src="assets/images/ebook.png"
-            alt="Charlotte Swensson - Het Kruispunt - e-book"
-            class="max-h-[min(45vh,45vw)] shadow-[10px_10px_20px_0_rgba(60,60,60,0.8)]"
-          >
-        </div>
-        <div>
-          <div class="text-center text-[27px] sm:text-[32px] md:text-[min(6vh,37px)]">Het Kruispunt</div>
-          <div class="text-center text-[22px] sm:text-[27px] md:text-[min(5vh,32px)]">E-book &euro; 4,99</div>
-        </div>
-      </div>
-    </div>
+      {% endfor %}
   </section>
 </div>
 <script
