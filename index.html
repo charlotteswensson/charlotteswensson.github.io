@@ -17,7 +17,7 @@
 
   {% for page_name in site.data.pages %}
     <section
-      class="section flex col h-screen pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-[2vw]"
+      class="section flex flex-col h-screen pt-[var(--mobile-navigation-total-height)] sm:pt-[var(--navigation-total-height)] container mx-auto px-[2vw] justify-center items-center"
       id="{{ page_name }}"
     >
       {% include _pages/{{ page_name }}.html %}
